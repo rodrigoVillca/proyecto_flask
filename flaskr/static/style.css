@@ -10,11 +10,11 @@ body {
 }
 h1 {
   font-family: serif;
-  color: #377ba8;
+  color: #89f34c;
   margin: 1rem 0;
 }
 a {
-  color: #377ba8;
+  color: #6cf55a;
 }
 hr {
   border: none;
@@ -77,7 +77,7 @@ header .action {
   margin-bottom: 0;
 }
 .post .about {
-  color: slategray;
+  color: #89f34c;
   font-style: italic;
 }
 .post .body {
@@ -104,7 +104,7 @@ header .action {
   resize: vertical;
 }
 input.danger {
-  color: #cc2f2e;
+  color: #89f34c;
 }
 input[type="submit"] {
   align-self: start;
