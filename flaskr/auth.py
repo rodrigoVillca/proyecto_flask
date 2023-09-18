@@ -15,8 +15,7 @@ def register():
         username = request.form['username']
         password = request.form['password']
         password2 = request.form['password2']
-        
-
+        gmail = request.form['gmail']
         db = get_db()
         error = None
 
@@ -26,13 +25,14 @@ def register():
             error = 'Password is required.'
         elif password != password2:
             error = 'password is required.'
-             
+        elif not gmail:
+            error = 'Email is required'     
 
         if error is None:
             try:
                 db.execute(
-                    "INSERT INTO user (username, password) VALUES (?, ?)",
-                    (username, generate_password_hash(password)),
+                    "INSERT INTO user (username,email, password) VALUES (?, ?, ?)",
+                    (username,gmail ,generate_password_hash(password)),
                 )
                 db.commit()
             except db.IntegrityError:
