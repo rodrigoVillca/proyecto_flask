@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %} - tu articulo</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 <nav>
-  <h1>Flaskr</h1>
+  <h1> tu articulo</h1>
   <ul>
     {% if g.user %}
     <li><span>{{ g.user['username'] }}</span></li>
-    <li><a href="{{ url_for('auth.logout') }}">Log Out</a> {% else %}</li>
+    <li><a href="{{ url_for('auth.logout') }}">cerrar sesión</a> {% else %}</li>
 
-    <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+    <li><a href="{{ url_for('auth.register') }}">registro</a></li>
     <li>
-      <a href="{{ url_for('auth.login') }}">Log In</a>
+      <a href="{{ url_for('auth.login') }}">acceso</a>
       {% endif %}
     </li>
   </ul>
