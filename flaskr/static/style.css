@@ -25,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
+  background-color: black;
 }
 nav h1 {
   flex: auto;
@@ -39,6 +40,8 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #89f34c;
+  
 }
 nav ul li a,
 nav ul li span,
@@ -48,11 +51,13 @@ header .action {
 }
 .content {
   padding: 0 1rem 1rem;
+  background-color: black;
 }
 .content > header {
   border-bottom: 1px solid lightgray;
   display: flex;
   align-items: flex-end;
+  background-color: black;
 }
 .content > header h1 {
   flex: auto;
@@ -94,10 +99,12 @@ header .action {
 .content label {
   font-weight: bold;
   margin-bottom: 0.5em;
+  color: #89f34c;
 }
 .content input,
 .content textarea {
   margin-bottom: 1em;
+  
 }
 .content textarea {
   min-height: 12em;
@@ -109,4 +116,6 @@ input.danger {
 input[type="submit"] {
   align-self: start;
   min-width: 10em;
+  color: #89f34c;
+  background-color: black;
 }
